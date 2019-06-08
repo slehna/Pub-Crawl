@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/codytdrew/Pub-Crawl/issues"
   },
-  "homepage": "https://github.com/codytdrew/Pub-Crawl#readme"
+  "homepage": "https://github.com/codytdrew/Pub-Crawl#readme",
+  "dependencies": {
+    "node": "^12.4.0"
+  }
 }
