@@ -6,7 +6,7 @@ CREATE TABLE `pubcrawl_db`.`beer` (
   `idbeer` INT NOT NULL AUTO_INCREMENT,
   `abv` DECIMAL NOT NULL,
   `id` INT NOT NULL,
-  `name` VARCHAR(45) NOT NULL,
+  `beer_name` VARCHAR(45) NOT NULL,
   `style` VARCHAR(45) NOT NULL,
   `brewery_id` VARCHAR(45) NOT NULL,
   `ounces` INT NOT NULL,
