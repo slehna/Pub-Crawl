@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/codytdrew/Pub-Crawl#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
     "node": "^12.4.0"
   }
 }
