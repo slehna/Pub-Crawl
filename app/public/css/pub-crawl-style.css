@@ -5,17 +5,22 @@
   text-align: center;
 }
 
-#topics {
+h5 {
+  text-align: center;
+}
+
+#survey {
   border-width: 2px;
   font-size: 25px;
   color: yellow;
   text-align: center;
   cursor: pointer;
-  background-color: rgb(4, 40, 241);
+  /* background-color: rgb(4, 40, 241); */
   font-weight: bolder;
   padding: 5px;
   margin: 0 auto;
   display: inline-block;
+  box-shadow: 15px 15px 15px black;
   border-color: black;
   border-style: solid;
   border-radius: 7px;
@@ -37,11 +42,7 @@
   height: 0 auto;
 }
 
-.topics:hover {
-  background-color: red;
-}
-
-.topics:active {
+#survey:active {
   background-color: red; /* When the button is clicked */
   box-shadow: 0 7px green;
   transform: translateY(4px);
@@ -49,15 +50,16 @@
 
 div {
   display: inline-block;
-  background-color: transparent;
-  border-radius: 1px;
-  border-style: ridge;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bolder;
-  color: white;
+  /* color: white; */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  height: auto;
+}
+
+.jumbotron  {
+  box-shadow: 15px 15px 15px black;
+  border: 10px 10px 10px black;
 }
 
 header {
@@ -76,7 +78,8 @@ header {
 
 .container {
   text-align: center;
-
+  display: inline-block;
+  margin: auto;
 }
 
 
@@ -92,8 +95,10 @@ body {
   top: 0;
   left: 0;
   background: url("../images/pub.jpg");
-  background-position: center;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  
+  background-size: 100%;
+  /* object-fit: cover; */
 }
 
 h1 {
