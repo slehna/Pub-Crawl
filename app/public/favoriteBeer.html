@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/pub-crawl-style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/pub-crawl-style.css">
     <title>Favorite Beers</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
         <hr>
     
         <h3><strong>Question 1</strong></h3>
-        <h4>Which alcohol by volume?</h4>
+        <h4>which alcohol by volume do yu prefer?</h4>
         <select class="chosen-select" id="q1">
           <option value=""></option>
           <option value="1">2.2%-4.5%</option>
@@ -37,37 +37,85 @@
         </select>
     
         <h3><strong>Question 2</strong></h3>
-        <h4>Which state do you want your beer to come from?</h4>
+        <h4>what state in the US do you want your beer to come from?</h4>
 
         <select class="chosen-select" id="q2">
           <option value=""></option>
-          <option value="1">1 (Strongly Disagree)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Strongly Agree)</option>
+          <option value="1">Alabama</option>
+          <option value="2"> Alaska</option>
+          <option value="3"> Arizona</option>
+          <option value="4"> Arckansas</option>
+          <option value="6"> California</option>
+          <option value="7"> Colorado</option>
+          <option value="8"> Conneticut</option>
+          <option value="9"> Delaware</option>
+          <option value="10"> florida</option>
+          <option value="11">georgia</option>
+          <option value="12"> hawaii</option>
+          <option value="13">Idaho</option>
+          <option value="14">illinios</option>
+          <option value="15"> indianna</option>
+          <option value="16"> kansas</option>
+          <option value="17"> kentucky</option>
+          <option value="18"> louisana</option>
+          <option value="19"> Maryland</option>
+          <option value="20"> Massachusetts</option>
+          <option value="21"> Michigan</option>
+          <option value="22"> Minnesota</option>
+          <option value="23"> Mississippi</option>
+          <option value="24"> Missouri</option>
+          <option value="25">Montana</option>
+          <option value="26"> Nebraska</option>
+          <option value="27"> Nevada</option>
+          <option value="28"> new hampshire</option>
+          <option value="29"> New jersey</option>
+          <option value="30"> New mexico</option>
+          <option value="31">new york</option>
+          <option value="32">North carolina</option>
+          <option value="33"> North dakota</option>
+          <option value="34">Ohio</option>
+          <option value="35"> Oklahoma</option>
+          <option value="36">oregon</option>
+         <option value="37"> pennsylvania</option>
+         <option value="38"> Rhode island</option>
+         <option value="39">South carolina</option>
+         <option value="40">South Dakota</option>
+         <option value="41">Tennesse</option>
+         <option value="42"> Texas</option>
+         <option value="43">Utah</option>
+         <option value="44">Vermont</option>
+         <option value="45">Virginia</option>
+         <option value="46">washinton</option>
+         <option value="47">west Virginia</option>
+         <option value="48">wiscosin</option>
+         <option value="49">wyoming</option>
+
+
         </select>
     
     
         <h3><strong>Question 3</strong></h3>
         <h4> how many ounces are you looking for ?</h4>
         <select class="chosen-select" id="q3">
-          <option value=""></option>
+        <option value=""></option>
+         
           <option value="1">12oz </option>
-          <option value="2">16oz </option>
+          <option value="2">16oz</option>
+          <option value="3"> 32oz</option>
           
         </select>
     
     
         <h3><strong>Question 4</strong></h3>
-        <h4> beer name </h4>
+        <h4> beer name? </h4>
         <select class="chosen-select" id="q4">
           <option value=""></option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Strongly Agree)</option>
+          <option value="1">Barrier Lomax</option>
+          <option value="2">Mikkeller San Diego Raspberry Blush</option>
+          <option value="3">2nd Shift Technical Ecstasy</option>
+          <option value="4"> Hitachino Nest Yuzu Lager</option>
+          <option value="5">  Reuben's Brews Summer IPA</option>
+          
         </select>
     
     
@@ -75,16 +123,16 @@
         <h4>what color are you looking for ?</h4>
         <select class="chosen-select" id="q5">
           <option value=""></option>
-          <option value="1">1 (Strongly Disagree)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Strongly Agree)</option>
+          <option value="1">red</option>
+          <option value="2">brown</option>
+          <option value="3">purple</option>
+          <option value="4">yellow</option>
+          <option value="5">reddish brown</option>
         </select>
     
     
         <h3><strong>Question 6</strong></h3>
-        <h4>Are you the DD </h4>
+        <h4>Are you the DD? </h4>
         <select class="chosen-select" id="q6">
           <option value=""></option>
           <option value="1">yes ( do not proceed further)</option>
@@ -94,7 +142,7 @@
     
     
         <h3><strong>Question 7</strong></h3>
-        <h4>how many beers do you plan to drink today </h4>
+        <h4>how many beers do you plan on drinking? </h4>
         <select class="chosen-select" id="q7">
           <option value=""></option>
           <option value="1"> 3 or less </option>
@@ -108,33 +156,47 @@
         <h4>Which beer games do you enjoy?  </h4>
         <select class="chosen-select" id="q8">
           <option value=""></option>
-          <option value="1">1 (Strongly Disagree)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Strongly Agree)</option>
+          <option value="1">beer pong</option>
+          <option value="2"> never have i ever</option>
+          <option value="3">Kings</option>
+          <option value="4"> Flip cup</option>
+          <option value="5">quarters</option>
         </select>
     
         <h3><strong>Question 9</strong></h3>
+<<<<<<< HEAD
         <h4> Preferred drink habits: </h4>
+=======
+        <h4> preferred drink habbits? </h4>
+>>>>>>> 1204a332a49ed29bd5866967d5a8d8342fd694f9
         <select class="chosen-select" id="q9">
           <option value=""></option>
           <option value="1">drink alone</option>
           <option value="2"> love drinking buddies</option>
-          <option value="3"> </option>
-          <option value="4">4</option>
-          <option value="5">5 (Strongly Agree)</option>
+          <option value="3"> party drinker</option>
+          <option value="4">pregame king/queen </option>
+          
         </select>
     
         <h3><strong>Question 10</strong></h3>
-        <h4> </h4>
+        <h4> how many beers are in a keg</h4>
         <select class="chosen-select" id="q10">
           <option value=""></option>
-          <option value="1">1 (Strongly Disagree)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Strongly Agree)</option>
+          <option value="1"> 165</option>
+          <option value="2">20</option>
+          <option value="3">100 </option>
+          <option value="4">0</option>
+          <option value="5"> 10</option>
+        </select>
+        <h3><strong>Question 11</strong></h3>
+        <h4> which country drinks the most beer</h4>
+        <select class="chosen-select" id="q10">
+          <option value=""></option>
+          <option value="1"> Czech Republic</option>
+          <option value="2">Germany</option>
+          <option value="3"> Ireland </option>
+          <option value="4"> USA</option>
+          <option value="5"> Greece</option>
         </select>
     
         <br>
