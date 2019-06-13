@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: auto;
+  margin: auto;
+  text-align: center;
+}
+
+#topics {
+  border-width: 2px;
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(4, 40, 241);
+  font-weight: bolder;
+  padding: 5px;
+  margin: 0 auto;
+  display: inline-block;
+  border-color: black;
+  border-style: solid;
+  border-radius: 7px;
+  border-width: 3px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  width: auto;
+  height: auto;
+  background: url("../images/beer-flowing.gif");
+}
+
+#ratings {
+  padding: 3px;
+  margin: 5px;
+  margin-top: auto;
+  font-size: 30px;
+  text-align: center;
+  background-color: red;
+  height: 0 auto;
+}
+
+.topics:hover {
+  background-color: red;
+}
+
+.topics:active {
+  background-color: red; /* When the button is clicked */
+  box-shadow: 0 7px green;
+  transform: translateY(4px);
+}
+
+div {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 1px;
+  border-style: ridge;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  height: auto;
+}
+
+header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bolder;
+}
+
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  text-align: center;
+
+}
+
+
+body {
+  text-align: center;
+  font-size: 30 px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../images/pub.jpg");
+  background-position: center;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  border-top: 1px solid black;
+  background: transparent;
+  font-weight: bolder;
+  margin: auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 40px auto;
+}
+
+@media only screen and (max-width: 980px) {
+  body {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrapper {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrapper {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    max-width: 100%;
+    height: auto;
+  }
+  header {
+    position: static;
+  }
+  .wrapper {
+    width: 600px;
+  }
+}
