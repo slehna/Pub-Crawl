@@ -26,14 +26,21 @@ app.use(express.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+var exphbs = require("express-handlebars");
+
+app.use(express.static(__dirname + '/public'));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
+var router = require("./app/controllers/beerController")
+
+app.use(router);
 
 // =============================================================================
 // LISTENER
 // The below code effectively "starts" our server
 // =============================================================================
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App listening on PORT: " + PORT);
 });

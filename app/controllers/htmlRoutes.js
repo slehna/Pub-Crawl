@@ -23,6 +23,9 @@ module.exports = function(app) {
   app.get("/favoriteBeer", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/favoriteBeer.html"));
   });
+  app.get("/beerlist", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/beerlist.html"));
+  });
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
