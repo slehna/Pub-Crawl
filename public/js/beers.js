@@ -1,16 +1,37 @@
-$(document).ready(function() {
+
+var Search = {};
 
 $("#beer-search").on("click", function(event){
     event.preventDefault();
 
-    const searchterm = $("#searched-term").text()
-    const searchtype = $("#search-type").val()
+    const searchterm = $("#searched-term").val()
+    const searchtypestring = $("#search-type option:selected").text()
+    var searchtype;
+    
+    function createSearchterm () {
+        if (searchtypestring === "Breweries") {
+            searchtype = "name"
+        }
+        else if (searchtypestring === "Beer") {
+            searchtype = "beer_name"
+        }
+        else if (searchtypestring === "State"){
+            searchtype = "state"
+        }
+    };
+    createSearchterm(searchtypestring)
+    
+   Search = {
+        searchType: searchtype,
+        searchTerm: searchterm
+    }
 
     console.log(searchterm + searchtype);
 
 })
 
-});
+module.exports = Search;
+
 // .get("/api/beer", function(data) {
 //     console.log(data);
 //     if (data.length !== 0) {

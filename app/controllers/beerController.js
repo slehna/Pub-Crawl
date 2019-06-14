@@ -2,6 +2,7 @@
 
 var express = require("express");
 
+
 var router = express.Router();
 
 var beer = require("../models/beer")
@@ -10,6 +11,11 @@ var beer = require("../models/beer")
 router.get("/", function (req, res) {
  
    res.render("index");
+ 
+});
+router.get("/survey", function (req, res) {
+ 
+   res.render("survey");
  
 });
 
@@ -27,6 +33,8 @@ router.get("/beers", function (req, res) {
 
 // http://.../beer?name="this_is_a_name"
 router.get("/beer", function (req, res) {
+
+  
   if (req.query.name) {
     //handle name not being passed
   }

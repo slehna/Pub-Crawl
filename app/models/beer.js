@@ -1,5 +1,6 @@
 var orm = require("../config/orm");
 
+
 var beer = {
     selectAll: function (cb) {
         orm.selectAll(function (res) {
