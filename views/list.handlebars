@@ -1,0 +1,14 @@
+  <div class="container">
+        <h1>Here are all the beers you can look at:</h1>
+        <hr>
+        <div id="all-beerlist">
+            <ul>
+            
+
+                {{#each beer}}
+                {{> beer_item/beer-block}}
+                {{/each}}
+                
+            </ul>
+            
+        </div>
