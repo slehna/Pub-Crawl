@@ -17,6 +17,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -26,14 +27,20 @@ app.use(express.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
+var router = require("./app/controllers/beerController")
+
+app.use(router);
 
 // =============================================================================
 // LISTENER
 // The below code effectively "starts" our server
 // =============================================================================
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App listening on PORT: " + PORT);
 });
