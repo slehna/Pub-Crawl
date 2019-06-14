@@ -1,90 +1,20 @@
-<div class="container">
-    <div id="boxsurvey">
+<div id="container">
+      <br />
+      <h2><img src="./images/beer-glasses-left.gif" width="100px";height="100px;">Find Your Perfect beer!<img src="./images/beer-glasses-right.gif" width="100px";height="100px;"></h2>
+      <hr />ic
 
-        <h2>find your perfect beer</h2>
-        <hr>
-    
-        <h3><strong>About You</strong></h3>
-        <h4>Name (Required)</h4>
-        <input type="text" id="name" class="form-control" required>
-    
-        <h4>Link to Photo Image (Required)</h4>
-        <input type="text" id="photo" class="form-control" required>
-    
-        <hr>
-    
-        <h3><strong>Question 1</strong></h3>
-        <h4>which alcohol by volume do yu prefer?</h4>
-        <select class="chosen-select" id="q1">
-          <option value=""></option>
-          <option value="1">2.2%-4.5%</option>
-          <option value="2">4.6% -7.5%</option>
-          <option value="3">7.6%-9.5%</option>
-          <option value="4">9.6%-11.5%</option>
-          <option value="5">11.6%-15%</option>
-        </select>
-    
-        <h3><strong>Question 2</strong></h3>
-        <h4>what state in the US do you want your beer to come from?</h4>
+      <h1><strong>ABOUT YOU</strong></h1>
+      <br />
+      <h4>Name (Required)</h4>
+      <input type="text" id="name" class="form-control" required />
+      <br /><br />
 
-        <select class="chosen-select" id="q2">
-          <option value=""></option>
-          <option value="1">alabama</option>
-          <option value="2"> Alaska</option>
-          <option value="3"> Arizona</option>
-          <option value="4"> Arckansas</option>
-          <option value="6"> California</option>
-          <option value="7"> colorado</option>
-          <option value="8"> conneticut</option>
-          <option value="9"> Delaware</option>
-          <option value="10"> florida</option>
-          <option value="11">georgia</option>
-          <option value="12"> hawaii</option>
-          <option value="13">Idaho</option>
-          <option value="14">illinios</option>
-          <option value="15"> indianna</option>
-          <option value="16"> kansas</option>
-          <option value="17"> kentucky</option>
-          <option value="18"> louisana</option>
-          <option value="19"> Maryland</option>
-          <option value="20"> Massachusetts</option>
-          <option value="21"> Michigan</option>
-          <option value="22"> Minnesota</option>
-          <option value="23"> Mississippi</option>
-          <option value="24"> Missouri</option>
-          <option value="25">Montana</option>
-          <option value="26"> Nebraska</option>
-          <option value="27"> Nevada</option>
-          <option value="28"> new hampshire</option>
-          <option value="29"> New jersey</option>
-          <option value="30"> New mexico</option>
-          <option value="31">new york</option>
-          <option value="32">North carolina</option>
-          <option value="33"> North dakota</option>
-          <option value="34">Ohio</option>
-          <option value="35"> Oklahoma</option>
-          <option value="36">oregon</option>
-         <option value="37"> pennsylvania</option>
-         <option value="38"> Rhode island</option>
-         <option value="39">South carolina</option>
-         <option value="40">South Dakota</option>
-         <option value="41">Tennesse</option>
-         <option value="42"> Texas</option>
-         <option value="43">Utah</option>
-         <option value="44">Vermont</option>
-         <option value="45">Virginia</option>
-         <option value="46">washinton</option>
-         <option value="47">west Virginia</option>
-         <option value="48">wiscosin</option>
-         <option value="49">wyoming</option>
+      <h4>Link to Photo Image (Required)</h4>
+      <input type="text" id="photo" class="form-control" required />
+      <hr />
 
-
-        </select>
-    
-    
-        <h3><strong>Question 3</strong></h3>
-        <h4> how many ounces are you looking for ?</h4>
-        <select class="chosen-select" id="q3">
+      <h3><strong>1. Preferred alcohol by volume:</strong></h3>
+      <select class="chosen-select" id="q1">
         <option value=""></option>
          
           <option value="1">12oz </option>
@@ -199,25 +129,32 @@
         </footer>
     
       </div>
-    
-      <!-- Modal -->
-      <div id="results-modal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-    
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button class="close" data-dismiss="modal">&times;</button>
-              <h2 class="modal-title"><strong>Best Match</strong></h2>
-            </div>
-            <div class="modal-body">
-              <h2 id="match-name"></h2>
-              <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+      <hr />
+      <footer id="footer">
+        Copyright DaiЯy Qu3Яy 2019
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
           </div>
-    
+          <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img
+              id="match-img"
+              src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
+    </div>

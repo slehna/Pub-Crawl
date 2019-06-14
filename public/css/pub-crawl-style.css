@@ -5,8 +5,40 @@
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
 h5 {
   text-align: center;
+}
+
+#submit {
+  border-color: yellow;
+  background: url("../images/beer-flowing.gif");
+  border-style: solid;
+  border-radius: 7px;
+  border-width: 3px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 30px;
+  font-weight: bolder;
+  color: yellow;
+  box-shadow: 15px 15px 15px black;
+  
+}
+
+#submit:hover {
+  background-color: red; /* When the button is clicked */
+}
+
+#submit:active {
+  background-color: red; /* When the button is clicked */
+  box-shadow: 0 7px green;
+  transform: translateY(4px);
 }
 
 #survey {
@@ -32,15 +64,6 @@ h5 {
   background: url("../images/beer-flowing.gif");
 }
 
-#ratings {
-  padding: 3px;
-  margin: 5px;
-  margin-top: auto;
-  font-size: 30px;
-  text-align: center;
-  background-color: red;
-  height: 0 auto;
-}
 
 #survey:active {
   background-color: red; /* When the button is clicked */
@@ -80,6 +103,16 @@ header {
   text-align: center;
   display: inline-block;
   margin: auto;
+  color: black;
+}
+
+#container {
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  color: yellow;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 
@@ -95,7 +128,6 @@ body {
   left: 0;
   background: url("../images/pub.jpg");
   background-repeat: no-repeat;
-  
   background-size: cover;
   /* object-fit: cover; */
 }
@@ -104,13 +136,17 @@ body {
   background-color: rgba(255, 113, 113, 0.24);
   width: 70%;
 }
+
 h1 {
   text-align: center; 
 }
 
+
+
+
 footer {
   text-align: center;
-  color: black;
+  color: yellow;
   border-top: 1px solid black;
   background: transparent;
   font-weight: bolder;
@@ -118,7 +154,14 @@ footer {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer {
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
