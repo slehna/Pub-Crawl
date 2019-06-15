@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  h5 {
+    text-align: center;
+  }
+  
+  #submit {
+    border-color: yellow;
+    background: url("../images/beer-flowing.gif");
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 3px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    color: yellow;
+    box-shadow: 15px 15px 15px black;
+    
+  }
+  
+  #submit:hover {
+    background-color: red; /* When the button is clicked */
+  }
+  
+  #submit:active {
+    background-color: red; /* When the button is clicked */
+    box-shadow: 0 7px green;
+    transform: translateY(4px);
+  }
+  
+  #survey {
+    border-width: 2px;
+    font-size: 25px;
+    color: yellow;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: rgb(4, 40, 241); */
+    font-weight: bolder;
+    padding: 5px;
+    margin: 0 auto;
+    display: inline-block;
+    box-shadow: 15px 15px 15px black;
+    border-color: black;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 3px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    width: auto;
+    height: auto;
+    background: url("../images/beer-flowing.gif");
+  }
+  
+  
+  #survey:active {
+    background-color: red; /* When the button is clicked */
+    box-shadow: 0 7px green;
+    transform: translateY(4px);
+  }
+  
+  div {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    /* color: white; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  .jumbotron  {
+    box-shadow: 15px 15px 15px black;
+    border: 10px 10px 10px black;
+  }
+  
+  header {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: oblique;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bolder;
+  }
+  
+  .center {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    color: black;
+  }
+  
+  #container {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    color: yellow;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  
+  body {
+    text-align: center;
+    font-size: 30 px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../images/pub.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: cover; */
+  }
+  
+  #boxsurvey {
+    background-color: rgba(255, 113, 113, 0.24);
+    width: 70%;
+  }
+  
+  h1 {
+    text-align: center; 
+  }
+  
+  
+  
+  
+  footer {
+    text-align: center;
+    color: yellow;
+    border-top: 1px solid black;
+    background: transparent;
+    font-weight: bolder;
+    margin: auto;
+  }
+  
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  #footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .wrapper {
+    width: 1024px;
+    margin: 40px auto;
+  }
+  
+  @media only screen and (max-width: 980px) {
+    body {
+      max-width: 100%;
+      height: auto;
+    }
+    .wrapper {
+      width: 800px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      max-width: 100%;
+      height: auto;
+    }
+    .wrapper {
+      width: 800px;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+    body {
+      max-width: 100%;
+      height: auto;
+    }
+    header {
+      position: static;
+    }
+    .wrapper {
+      width: 600px;
+    }
+  }
+  
